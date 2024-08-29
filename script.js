@@ -3,8 +3,12 @@ let targetDay = "28";
 let targetYear = "2024";
 let targetTime = "21:00:00";
 
+let targetDate = targetMonth + " " + targetDay + " " + targetYear + " " + targetTime;
 
-const countdownDate = new Date("October 28, 2024 21:00:00").getTime();
+console.log(targetDate);
+
+
+const countdownDate = new Date(targetDate).getTime();
 
 const myfunc = setInterval(function() {
     const now = new Date().getTime();
