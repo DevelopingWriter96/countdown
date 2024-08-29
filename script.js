@@ -1,6 +1,7 @@
 let targetMonth = "October";
-let targetDay = 28;
-let targetYear = 2024;
+let targetDay = "28";
+let targetYear = "2024";
+let targetTime = "21:00:00";
 
 
 const countdownDate = new Date("October 28, 2024 21:00:00").getTime();
