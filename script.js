@@ -1,7 +1,9 @@
-let targetMonth = "October";
-let targetDay = "28";
+let targetMonth = "September";
+let targetDay = "20";
 let targetYear = "2024";
-let targetTime = "21:00:00";
+let targetTime = "17:15:00";
+let targetMessage = "Get ready to head to Cybertron";
+let endMessage = "Transform and Roll Out!";
 
 let targetDate = targetMonth + " " + targetDay + " " + targetYear + " " + targetTime;
 
@@ -11,6 +13,7 @@ console.log(targetDate);
 const countdownDate = new Date(targetDate).getTime();
 
 const myfunc = setInterval(function() {
+    document.getElementById('message').innerHTML = targetMessage;
     const now = new Date().getTime();
     const timeLeft = countdownDate - now;
     
@@ -48,6 +51,6 @@ const myfunc = setInterval(function() {
         document.getElementById('hours').innerHTML = "";
         document.getElementById('mins').innerHTML = "";
         document.getElementById('secs').innerHTML = "";
-        document.getElementById('end').innerHTML = "12:00 AM, Night 1, let the terror Begin!"
+        document.getElementById('end').innerHTML = endMessage;
     }
 }, 1000)
