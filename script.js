@@ -1,14 +1,15 @@
+
+
 let targetMonth = "September";
 let targetDay = "20";
 let targetYear = "2024";
-let targetTime = "17:15:00";
+let targetTime = "18:45:00";
 let targetMessage = "Get ready to head to Cybertron";
 let endMessage = "Transform and Roll Out!";
 
 let targetDate = targetMonth + " " + targetDay + " " + targetYear + " " + targetTime;
 
 console.log(targetDate);
-
 
 const countdownDate = new Date(targetDate).getTime();
 
